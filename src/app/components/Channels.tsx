@@ -5,9 +5,9 @@ export default function Channels() {
     {
       icon: MessageSquare,
       name: "네이버 톡톡",
-      tag: "기록 남기며 편하게",
+      tag: "조용한 공간에서",
       description: "예약 시간 내 집중 진행",
-      features: ["대화 기록 보관", "편한 시간에 질문", "이미지/파일 공유 가능"]
+      features: ["도서관, 조용한 공간에서", "편한 시간에 질문", "이미지/파일 공유 가능"]
     },
     {
       icon: Phone,
@@ -21,7 +21,7 @@ export default function Channels() {
       name: "줌",
       tag: "깊은 대화",
       description: "조용한 환경 권장",
-      features: ["대면 상담 느낌", "표정/반응 교류", "화면 공유 가능"]
+      features: ["대면 상담 느낌", "디테일한 상담 가능", "화면 공유 가능"]
     }
   ];
 
