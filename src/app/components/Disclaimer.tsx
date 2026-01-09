@@ -4,16 +4,16 @@ export default function Disclaimer() {
   return (
     <section className="py-10 sm:py-12 bg-gray-50">
       <div className="px-4 sm:px-8">
-        <div className="bg-white rounded-xl border-2 border-gray-300 p-6 sm:p-8">
-          <div className="flex items-start gap-4 mb-4">
+        <div className="bg-white rounded-xl border-2 border-gray-300 p-5 sm:p-6 lg:p-8">
+          <div className="flex items-start gap-3 sm:gap-4 mb-4">
             <div className="flex-shrink-0">
-              <AlertCircle className="w-6 h-6 text-gray-600" />
+              <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3">
                 면책 및 주의사항
               </h3>
-              <div className="space-y-2 text-sm text-gray-600 leading-relaxed">
+              <div className="space-y-2 text-xs sm:text-sm text-gray-600 leading-relaxed">
                 <p>
                   • 본 상담은 사주와 타로를 활용한 <span className="font-medium">참고 정보</span>를 제공하며, 최종 선택과 책임은 본인에게 있습니다.
                 </p>

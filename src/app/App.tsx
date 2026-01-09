@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className="min-h-screen w-full bg-white">
       {/* 스마트스토어 상세페이지 너비: 860px */}
-      <div className="max-w-[860px] mx-auto">
+      <div className="max-w-[860px] mx-auto px-0">
         <Header />
         
         <main className="w-full">

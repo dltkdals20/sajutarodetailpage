@@ -131,51 +131,50 @@ export default function WhatWeSee() {
     <section className="py-12 sm:py-16 bg-white">
       <div className="px-4 sm:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl mb-4 text-gray-800">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl mb-4 text-gray-800 px-2">
             무엇을 보나요?
           </h2>
-          <p className="text-base sm:text-lg text-gray-600">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 px-2">
             추상적인 운세가 아니라 <span className="font-semibold text-orange-600">구체적인 답변과 실행 방향</span>을 드려요
           </p>
         </div>
 
         {/* 사주 Section */}
         <div className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-2 sm:gap-3 mb-6">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-orange-300 to-transparent"></div>
-            <div className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm sm:text-base font-semibold shadow-lg">
+            <div className="px-4 sm:px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-xs sm:text-sm lg:text-base font-semibold shadow-lg">
               사주로 보는 것 → 타고난 기질 그리고 운명
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-orange-300 to-transparent"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-5">
-            {sajuInsights.map((item, index) => {
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">{sajuInsights.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border-2 border-orange-200 hover:border-orange-400 transition-all hover:shadow-lg"
+                  className="bg-gradient-to-br from-orange-50 to-white p-5 sm:p-6 rounded-xl border-2 border-orange-200 hover:border-orange-400 transition-all hover:shadow-lg"
                 >
-                  <div className="flex items-start gap-4 mb-3">
-                    <div className="p-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg">
-                      <Icon className="w-5 h-5 text-white" />
+                  <div className="flex items-start gap-3 sm:gap-4 mb-3">
+                    <div className="p-2.5 sm:p-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex-shrink-0">
+                      <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-gray-800 mb-1 text-base sm:text-lg">
+                      <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base lg:text-lg">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-gray-500">
+                      <p className="text-xs sm:text-sm text-gray-500">
                         {item.subtitle}
                       </p>
                     </div>
                   </div>
                   
                   <div className="ml-1 space-y-2">
-                    <div className="text-sm text-gray-800 font-medium">
+                    <div className="text-xs sm:text-sm text-gray-800 font-medium">
                       {item.description}
                     </div>
-                    <div className="text-xs sm:text-sm text-gray-600">
+                    <div className="text-xs text-gray-600">
                       {item.details.map((detail, idx) => (
                         <div key={idx} className="flex items-center">
                           <span className="mr-2">•</span>
@@ -192,31 +191,30 @@ export default function WhatWeSee() {
 
         {/* 타로 Section */}
         <div className="mb-10">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-2 sm:gap-3 mb-6">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
-            <div className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full text-sm sm:text-base font-semibold shadow-lg">
+            <div className="px-4 sm:px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full text-xs sm:text-sm lg:text-base font-semibold shadow-lg">
               타로로 보는 것 → 지금의 변수와 선택
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-5">
-            {taroInsights.map((item, index) => {
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">{taroInsights.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-200 hover:border-purple-400 transition-all hover:shadow-lg"
+                  className="bg-gradient-to-br from-purple-50 to-white p-5 sm:p-6 rounded-xl border-2 border-purple-200 hover:border-purple-400 transition-all hover:shadow-lg"
                 >
-                  <div className="flex items-start gap-4 mb-3">
-                    <div className="p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg">
-                      <Icon className="w-5 h-5 text-white" />
+                  <div className="flex items-start gap-3 sm:gap-4 mb-3">
+                    <div className="p-2.5 sm:p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex-shrink-0">
+                      <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-gray-800 mb-1 text-base sm:text-lg">
+                      <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base lg:text-lg">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-gray-500">
+                      <p className="text-xs sm:text-sm text-gray-500">
                         {item.description}
                       </p>
                     </div>
@@ -229,41 +227,40 @@ export default function WhatWeSee() {
 
         {/* Additional Readings Section */}
         <div className="mb-10">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-2 sm:gap-3 mb-6">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
-            <div className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full text-sm sm:text-base font-semibold shadow-lg">
+            <div className="px-4 sm:px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full text-xs sm:text-sm lg:text-base font-semibold shadow-lg">
               추가로 알아볼 수 있는 것
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-5">
-            {additionalReadings.map((item, index) => {
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">{additionalReadings.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-200 hover:border-purple-400 transition-all hover:shadow-lg"
+                  className="bg-gradient-to-br from-purple-50 to-white p-5 sm:p-6 rounded-xl border-2 border-purple-200 hover:border-purple-400 transition-all hover:shadow-lg"
                 >
-                  <div className="flex items-start gap-4 mb-3">
-                    <div className="p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg">
-                      <Icon className="w-5 h-5 text-white" />
+                  <div className="flex items-start gap-3 sm:gap-4 mb-3">
+                    <div className="p-2.5 sm:p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex-shrink-0">
+                      <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-gray-800 mb-1 text-base sm:text-lg">
+                      <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base lg:text-lg">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-gray-500">
+                      <p className="text-xs sm:text-sm text-gray-500">
                         {item.question}
                       </p>
                     </div>
                   </div>
                   
                   <div className="ml-1 space-y-2">
-                    <div className="text-sm text-gray-800 font-medium">
+                    <div className="text-xs sm:text-sm text-gray-800 font-medium">
                       {item.answer}
                     </div>
-                    <div className="text-xs sm:text-sm text-gray-600">
+                    <div className="text-xs text-gray-600">
                       {item.detail}
                     </div>
                   </div>
@@ -274,15 +271,15 @@ export default function WhatWeSee() {
         </div>
 
         {/* Bottom Impact Box */}
-        <div className="mt-10 p-6 sm:p-8 bg-gradient-to-br from-orange-500 via-orange-600 to-purple-600 rounded-2xl text-white text-center">
+        <div className="mt-10 p-5 sm:p-6 lg:p-8 bg-gradient-to-br from-orange-500 via-orange-600 to-purple-600 rounded-2xl text-white text-center">
           <div className="mb-4">
-            <span className="text-3xl sm:text-4xl">✨</span>
+            <span className="text-2xl sm:text-3xl lg:text-4xl">✨</span>
           </div>
-          <h3 className="text-xl sm:text-2xl font-semibold mb-3">
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 px-2">
             사주로 <span className="underline">언제</span>가 좋은지 알고,<br className="hidden sm:block" />
             타로로 <span className="underline">지금 무엇</span>을 해야 할지 정리해요
           </h3>
-          <p className="text-sm sm:text-base text-orange-50">
+          <p className="text-xs sm:text-sm lg:text-base text-orange-50 px-2">
             상담이 끝나면 "막연한 궁금증"이 "실행 가능한 계획"으로 바뀝니다
           </p>
         </div>

@@ -25,51 +25,51 @@ export default function Principles() {
         {/* 상담 방식 안내 카드들 */}
         <div className="max-w-2xl mx-auto mb-12 space-y-4">
           {/* 전화 상담 안내 */}
-          <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-2 border-orange-300 rounded-2xl p-6 sm:p-8 text-center shadow-md">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 shadow-lg">
-              <Phone className="w-10 h-10 text-white" />
+          <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-2 border-orange-300 rounded-2xl p-5 sm:p-6 lg:p-8 text-center shadow-md">
+            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 shadow-lg">
+              <Phone className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 px-2">
               전화 상담시 결쌤이 먼저 연락을 드립니다
             </h3>
-            <p className="text-base sm:text-lg text-gray-700">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-700">
               먼저 연락을 드리니 차분히 기다리시면 됩니다.
             </p>
           </div>
 
           {/* 줌 상담 안내 */}
-          <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-2 border-orange-300 rounded-2xl p-6 sm:p-8 text-center shadow-md">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 shadow-lg">
-              <VideoOff className="w-10 h-10 text-white" />
+          <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-2 border-orange-300 rounded-2xl p-5 sm:p-6 lg:p-8 text-center shadow-md">
+            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 shadow-lg">
+              <VideoOff className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 px-2">
               줌 또한 얼굴 화면을 끄고 음성으로만 진행됩니다
             </h3>
-            <p className="text-base sm:text-lg text-gray-700">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-700">
               얼굴 노출 걱정은 안하셔도 됩니다.
             </p>
           </div>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl text-center mb-10 text-gray-800">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl text-center mb-10 text-gray-800 px-2">
           결 상담소의 약속
         </h2>
 
-        <div className="grid sm:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {principles.map((principle, index) => {
             const Icon = principle.icon;
             return (
               <div 
                 key={index}
-                className="text-center p-6 bg-orange-50 rounded-xl border border-orange-200 hover:shadow-md transition-shadow"
+                className="text-center p-5 sm:p-6 bg-orange-50 rounded-xl border border-orange-200 hover:shadow-md transition-shadow"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon className="w-8 h-8 text-white" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3">
                   {principle.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   {principle.description}
                 </p>
               </div>

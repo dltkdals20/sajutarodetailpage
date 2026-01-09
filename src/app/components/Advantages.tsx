@@ -1,10 +1,10 @@
 import { FileText, Sparkles, BrainCircuit } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import reportImage from "figma:asset/b8fda59c75cfbd39bbd9e072f289677406fb841e.png";
-import tarotSelectImage from "figma:asset/f3061664269367cb35afd176dcfa2a0d7d4dc07c.png";
-import tarotResultImage from "figma:asset/9768ca64395bc02729106b102a9999a4fe21c5b0.png";
-import tciImage from "figma:asset/d71f354220b851a4c38302c5cd524688b4a93c37.png";
-import hollandImage from "figma:asset/aac2f9e3dba8358bb94a057ce389884a8041406f.png";
+import reportImage from "/assets/b8fda59c75cfbd39bbd9e072f289677406fb841e.png";
+import tarotSelectImage from "/assets/f3061664269367cb35afd176dcfa2a0d7d4dc07c.png";
+import tarotResultImage from "/assets/9768ca64395bc02729106b102a9999a4fe21c5b0.png";
+import tciImage from "/assets/d71f354220b851a4c38302c5cd524688b4a93c37.png";
+import hollandImage from "/assets/aac2f9e3dba8358bb94a057ce389884a8041406f.png";
 
 export default function Advantages() {
   const advantages = [
@@ -77,7 +77,7 @@ export default function Advantages() {
                   ) : (
                     <div className="grid grid-cols-2 gap-2 p-2 bg-gray-50">
                       {advantage.images.map((img, imgIndex) => (
-                        <div key={imgIndex} className="rounded-lg overflow-hidden border border-gray-200 h-80">
+                        <div key={imgIndex} className="rounded-lg overflow-hidden border border-gray-200 h-60 sm:h-80">
                           <ImageWithFallback
                             src={img}
                             alt={`${advantage.title} 예시 ${imgIndex + 1}`}

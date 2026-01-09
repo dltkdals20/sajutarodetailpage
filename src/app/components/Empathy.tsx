@@ -13,12 +13,11 @@ export default function Empathy() {
   return (
     <section className="py-12 sm:py-16 bg-white">
       <div className="px-4 sm:px-8">
-        <h2 className="text-2xl sm:text-3xl text-center mb-10 text-gray-800">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl text-center mb-8 sm:mb-10 text-gray-800 px-2">
           혹시 지금, 이런 상태인가요?
         </h2>
 
-        <div className="grid sm:grid-cols-2 gap-4 mb-8">
-          {checkItems.map((item, index) => (
+        <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-8">{checkItems.map((item, index) => (
             <div 
               key={index}
               className="flex items-start gap-3 p-4 bg-orange-50/50 rounded-lg border border-orange-100 hover:border-orange-300 transition-colors"
@@ -35,7 +34,7 @@ export default function Empathy() {
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="text-center px-4">
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
             하나라도 해당된다면, 이번 상담은 <span className="font-semibold text-orange-600">'결정의 기준'</span>을 만들어주는 시간이 될 거예요.
           </p>

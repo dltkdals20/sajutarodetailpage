@@ -37,7 +37,7 @@ export default function HowItWorks() {
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-b from-white to-orange-50">
       <div className="px-4 sm:px-8">
-        <h2 className="text-2xl sm:text-3xl text-center mb-10 text-gray-800">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl text-center mb-10 text-gray-800 px-2">
           진행 방식은 이렇게 간단해요
         </h2>
 
@@ -45,15 +45,15 @@ export default function HowItWorks() {
           {/* Vertical line for desktop */}
           <div className="hidden sm:block absolute left-8 top-8 bottom-8 w-0.5 bg-gradient-to-b from-orange-300 to-orange-500"></div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
-                <div key={index} className="relative flex items-start gap-4 sm:gap-6">
+                <div key={index} className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                   {/* Icon with number */}
                   <div className="relative flex-shrink-0 z-10">
-                    <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                      <Icon className="w-7 h-7 text-white" />
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                     </div>
                     <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white border-2 border-orange-500 rounded-full flex items-center justify-center text-xs font-bold text-orange-600">
                       {index + 1}
@@ -61,8 +61,8 @@ export default function HowItWorks() {
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1 pt-2 pb-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                  <div className="flex-1 pt-1 sm:pt-2 pb-4">
+                    <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 mb-2">
                       {step.title}
                     </h3>
                     <p className="text-sm sm:text-base text-gray-600 leading-relaxed">

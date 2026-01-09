@@ -11,7 +11,7 @@ export default function Hero() {
         {/* Badges */}
         <div className="flex flex-wrap gap-2 justify-center mb-6">
           <span className="px-4 py-1.5 bg-white border border-orange-200 text-orange-700 rounded-full text-sm shadow-sm">
-            온라인 상담(톡톡·전화·줌)
+            온라인 상담(네이버 톡톡·문자·전화·줌)
           </span>
           <span className="px-4 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm shadow-md">
             사주+타로 더블 리딩
@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
         {/* Main heading */}
-        <h1 className="text-3xl sm:text-4xl text-center mb-6 leading-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl text-center mb-6 leading-tight px-2">
           <span className="block text-gray-800">2026 병오년 신년운세,</span>
           <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
             사주로 한 번. 타로로 한 번 더.
@@ -44,9 +44,9 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="https://talk.naver.com/WI2DRB9" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl text-base sm:text-lg font-medium">
+          <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl text-base sm:text-lg font-medium">
             상담 신청하기
-          </a>
+          </button>
         </div>
       </div>
     </section>
