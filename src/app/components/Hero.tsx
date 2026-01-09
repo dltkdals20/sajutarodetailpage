@@ -32,13 +32,16 @@ export default function Hero() {
         {/* Subheading */}
         <div className="mx-auto mb-8 space-y-3 text-center">
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-            사주는 태어난 정보로 보는 <span className="font-semibold text-orange-600">정해진 큰 흐름(타이밍·강약)</span>이고,
+            사주는 태어난 정보로 보는 <br className="sm:hidden" />
+            <span className="font-semibold text-orange-600">정해진 큰 흐름(타이밍·강약)</span>이고,
           </p>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-            타로는 지금의 상황이 만든 <span className="font-semibold text-orange-600">현재 기운(변수·선택)</span>을 담아요.
+            타로는 지금의 상황이 만든 <br className="sm:hidden" />
+            <span className="font-semibold text-orange-600">현재 기운(변수·선택)</span>을 담아요.
           </p>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-            그래서 상담이 끝나면 이해가 깊어지고 고민이 <span className="font-semibold text-orange-600">결정과 실행</span>으로 정리됩니다.
+            그래서 상담이 끝나면 이해가 깊어지고 <br className="sm:hidden" />
+            고민이 <span className="font-semibold text-orange-600">결정과 실행</span>으로 정리됩니다.
           </p>
         </div>
 
