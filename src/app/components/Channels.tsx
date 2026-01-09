@@ -7,7 +7,7 @@ export default function Channels() {
       name: "네이버 톡톡",
       tag: "조용한 공간에서",
       description: "예약 시간 내 집중 진행",
-      features: ["도서관, 조용한 공간에서", "조용한 공간에서", "도서관 처럼 조용한 공간"]
+      features: ["도서관처럼 정숙한 실내 공간에서", "카페·공유오피스 등 집중하기 좋은 장소에서", "버스·지하철 등 이동 중에도 간편하게"]
     },
     {
       icon: Phone,

@@ -18,12 +18,12 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6">
-          <button className="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 bg-white text-orange-600 rounded-xl hover:bg-orange-50 transition-all shadow-xl hover:shadow-2xl text-base sm:text-lg font-semibold">
+          <a href="https://talk.naver.com/WI2DRB9" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 bg-white text-orange-600 rounded-xl hover:bg-orange-50 transition-all shadow-xl hover:shadow-2xl text-base sm:text-lg font-semibold text-center">
             상담 신청하기
-          </button>
-          <button className="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 bg-transparent text-white border-2 border-white rounded-xl hover:bg-white/10 transition-all text-base sm:text-lg font-semibold">
+          </a>
+          <a href="https://talk.naver.com/WI2DRB9" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 bg-transparent text-white border-2 border-white rounded-xl hover:bg-white/10 transition-all text-base sm:text-lg font-semibold text-center">
             문의하기
-          </button>
+          </a>
         </div>
 
         <p className="text-xs sm:text-sm text-orange-100 px-2">

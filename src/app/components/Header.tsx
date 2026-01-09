@@ -20,13 +20,13 @@ export default function Header() {
               온라인 상담 | 네이버 톡톡·문자·전화·줌
             </span>
             
-            <button className="hidden sm:inline-block px-4 py-2 text-sm text-gray-700 hover:text-orange-600 transition-colors">
+            <a href="https://talk.naver.com/WI2DRB9" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block px-4 py-2 text-sm text-gray-700 hover:text-orange-600 transition-colors">
               문의하기
-            </button>
-            
-            <button className="px-5 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-md hover:shadow-lg text-sm sm:text-base">
+            </a>
+
+            <a href="https://talk.naver.com/WI2DRB9" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-md hover:shadow-lg text-sm sm:text-base">
               상담 신청하기
-            </button>
+            </a>
           </div>
         </div>
 
